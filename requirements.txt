@@ -1,0 +1,4 @@
+--extra-index-url=http://dist.pinaxproject.com/django/
+
+Django==1.4c1
+pinax-theme-bootstrap==2.0.1.1

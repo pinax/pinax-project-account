@@ -1,4 +1,9 @@
---extra-index-url=http://dist.pinaxproject.com/django/
+--extra-index-url=http://dist.pinaxproject.com/dev/
+--extra-index-url=http://dist.pinaxproject.com/alpha/
 
-Django==1.4c1
-pinax-theme-bootstrap==2.0.1.1
+Django==1.4
+pinax-theme-bootstrap==2.0.2.post3
+pinax-utils==1.0b1.dev3
+
+-e git+git://github.com/pinax/pinax-theme-bootstrap-account@714e55481b1970c4495e5c4ad96907fd59045b79#egg=pinax-theme-bootstrap-account
+-e git+git://github.com/pinax/django-user-accounts@ff1cde43dda9c9ff7df9d57cc58b8659f607e33c#egg=django-user-accounts

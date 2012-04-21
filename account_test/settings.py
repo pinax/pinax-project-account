@@ -1,6 +1,7 @@
 import os
 
 
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
@@ -85,6 +86,20 @@ TEMPLATE_LOADERS = [
     "django.template.loaders.app_directories.Loader",
 ]
 
+TEMPLATE_CONTEXT_PROCESSORS = [
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.core.context_processors.request",
+    "django.contrib.messages.context_processors.messages",
+    "pinax_utils.context_processors.settings",
+    "account.context_processors.account",
+]
+
+
 MIDDLEWARE_CLASSES = [
     "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -93,10 +108,10 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.messages.middleware.MessageMiddleware",
 ]
 
-ROOT_URLCONF = "zero_test.urls"
+ROOT_URLCONF = "account_test.urls"
 
 # Python dotted path to the WSGI application used by Django"s runserver.
-WSGI_APPLICATION = "zero_test.wsgi.application"
+WSGI_APPLICATION = "account_test.wsgi.application"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
@@ -111,9 +126,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     
     # theme
+    "pinax_theme_bootstrap_account",
     "pinax_theme_bootstrap",
     
     # external
+    "account",
     
     # project
 ]
@@ -146,3 +163,7 @@ LOGGING = {
         },
     }
 }
+
+FIXTURE_DIRS = [
+    os.path.join(PROJECT_ROOT, "fixtures"),
+]

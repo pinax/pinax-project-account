@@ -8,9 +8,6 @@
             </a>
             <ul class="dropdown-menu">
                 <li><a href="{% url account_settings %}"><i class="icon-user"></i> Settings</a></li>
-                {% if request.user.is_staff %}
-                    <li><a href="{% url admin:index %}"><i class="icon-cog"></i> Admin</a></li>
-                {% endif %}
                 <li class="divider"></li>
                 <li><a href="{% url account_logout %}"><i class="icon-off"></i> Log out</a></li>
             </ul>

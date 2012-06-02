@@ -77,8 +77,8 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
-# Make this unique, and don"t share it with anybody.
-SECRET_KEY = "r8isy06gxx*tzyfp=%)vfz8=7qm5=c6et@fthokqt7_kb@c1j("
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = "{{ secret_key }}"
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = [
@@ -108,16 +108,17 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.messages.middleware.MessageMiddleware",
 ]
 
-ROOT_URLCONF = "account_test.urls"
+ROOT_URLCONF = "{{ project_name }}.urls"
 
-# Python dotted path to the WSGI application used by Django"s runserver.
-WSGI_APPLICATION = "account_test.wsgi.application"
+# Python dotted path to the WSGI application used by Django's runserver.
+WSGI_APPLICATION = "{{ project_name }}.wsgi.application"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
 ]
 
 INSTALLED_APPS = [
+    "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -128,10 +129,13 @@ INSTALLED_APPS = [
     # theme
     "pinax_theme_bootstrap_account",
     "pinax_theme_bootstrap",
+    "django_forms_bootstrap",
     
     # external
     "account",
-    
+    "timezones",
+    "metron",
+
     # project
 ]
 
@@ -167,3 +171,19 @@ LOGGING = {
 FIXTURE_DIRS = [
     os.path.join(PROJECT_ROOT, "fixtures"),
 ]
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+ACCOUNT_OPEN_SIGNUP = True
+ACCOUNT_USE_OPENID = False
+ACCOUNT_REQUIRED_EMAIL = False
+ACCOUNT_EMAIL_VERIFICATION = False
+ACCOUNT_EMAIL_AUTHENTICATION = False
+ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
+
+LOGIN_URL = "/account/login/" # @@@ any way this can be a url name?
+LOGIN_REDIRECT_URLNAME = "home"
+LOGOUT_REDIRECT_URLNAME = "home"
+
+EMAIL_CONFIRMATION_DAYS = 2
+EMAIL_DEBUG = DEBUG

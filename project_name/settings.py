@@ -133,9 +133,8 @@ INSTALLED_APPS = [
     
     # external
     "account",
-    "timezones",
     "metron",
-
+    
     # project
 ]
 

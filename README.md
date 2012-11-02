@@ -4,6 +4,6 @@ pinax-project-account
 a starter project the incorporates account features from django-user-accounts
 
 
-To Use::
+Usage::
 
-    $ django-admin.py startproject [your_project_name] --template=https://github.com/pinax/pinax-project-account/zipball/master .
+    django-admin.py startproject --template=https://github.com/pinax/pinax-project-account/zipball/master <project_name>

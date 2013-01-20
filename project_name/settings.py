@@ -134,6 +134,7 @@ INSTALLED_APPS = [
     # external
     "account",
     "metron",
+    "eventlog",
     
     # project
 ]

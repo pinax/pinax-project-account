@@ -137,6 +137,7 @@ INSTALLED_APPS = [
     "eventlog",
     
     # project
+    "{{ project_name }}",
 ]
 
 # A sample logging configuration. The only tangible logging

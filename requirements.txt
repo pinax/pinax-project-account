@@ -2,11 +2,11 @@
 --extra-index-url=http://dist.pinaxproject.com/alpha/
 
 Django==1.4.3
-pinax-theme-bootstrap==2.2.2
+pinax-theme-bootstrap==3.0a2
 pinax-theme-bootstrap-account==1.0b2
 django-user-accounts==1.0b8
 django-forms-bootstrap==2.0.3.post1
-metron==1.0
+metron==1.1
 pinax-utils==1.0b1.dev3
 eventlog==0.6
-django-jsonfield==0.8.11
+django-jsonfield==0.8.12

@@ -1,5 +1,5 @@
 Django==1.4.5
-pinax-theme-bootstrap==3.0a8
+pinax-theme-bootstrap==3.0a9
 django-user-accounts==1.0b13
 django-forms-bootstrap==2.0.3.post1
 metron==1.1

@@ -127,8 +127,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     
     # theme
+    "bootstrapform",
     "pinax_theme_bootstrap",
-    "django_forms_bootstrap",
     
     # external
     "account",

@@ -13,7 +13,7 @@ Getting Started:
     pip install virtualenv
     virtualenv mysiteenv
     source mysiteenv/bin/activate
-    pip install Django==1.4.5
+    pip install Django==1.6
     django-admin.py startproject --template=https://github.com/pinax/pinax-project-account/zipball/master mysite
     cd mysite
     pip install -r requirements.txt

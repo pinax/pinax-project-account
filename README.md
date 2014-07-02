@@ -1,7 +1,7 @@
 pinax-project-account
 =====================
 
-a starter project the incorporates account features from django-user-accounts
+a starter project that incorporates account features from django-user-accounts
 
 
 Usage:

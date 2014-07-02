@@ -17,7 +17,7 @@
         makes your site different.
         {% endblocktrans %}
     </p>
-    
+
     <h2>About Account Project</h2>
     <p>
         {% blocktrans %}
@@ -27,7 +27,7 @@
         suitable for most sites that have user accounts.
         {% endblocktrans %}
     </p>
-    
+
     {% if user.is_authenticated %}
         {% url "what_next" as what_next_url %}
         <p class="what_next">{% blocktrans %}Wondering <a href="{{ what_next_url }}" class="btn btn-primary large">What Next</a>?{% endblocktrans %}</p>

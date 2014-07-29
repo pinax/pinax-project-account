@@ -3,15 +3,10 @@ import os
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
+BASE_DIR = PACKAGE_ROOT
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-
-ADMINS = [
-    # ("Your Name", "your_email@example.com"),
-]
-
-MANAGERS = ADMINS
 
 DATABASES = {
     "default": {

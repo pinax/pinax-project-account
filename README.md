@@ -17,9 +17,10 @@ Getting Started:
     pip install virtualenv
     virtualenv mysiteenv
     source mysiteenv/bin/activate
-    pip install Django==1.6.5
+    pip install Django==1.7.1
     django-admin.py startproject --template=https://github.com/pinax/pinax-project-account/zipball/master mysite
     cd mysite
     pip install -r requirements.txt
-    python manage.py syncdb
-    python manage.py runserver
+    ./manage.py migrate
+    ./manage.py loaddata sites
+    ./manage.py runserver

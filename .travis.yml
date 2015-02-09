@@ -8,10 +8,11 @@ install:
   - pip install flake8
 script:
   - pip install Django
-  - django-admin.py startproject --template=. myproject
-  - cd myproject
+  - django-admin.py startproject --template=. mysite
+  - cd mysite
+  - chmod +x manage.py
   - pip install -r requirements.txt
-  - python manage.py syncdb --noinput
-  - python manage.py loaddata sites
-  - python manage.py validate
-  - flake8 myproject
+  - ./manage.py syncdb --noinput
+  - ./manage.py loaddata sites
+  - ./manage.py validate
+  - flake8 mysite

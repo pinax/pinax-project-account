@@ -20,6 +20,7 @@ matrix:
 install:
   - pip install flake8
 script:
+  - pip install $DJANGO
   - django-admin.py startproject --template=. myproject
   - cd myproject
   - pip install -r requirements.txt

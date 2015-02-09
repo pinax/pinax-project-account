@@ -12,5 +12,6 @@ script:
   - cd myproject
   - pip install -r requirements.txt
   - python manage.py syncdb --noinput
+  - python manage.py loaddata sites
   - python manage.py validate
   - flake8 myproject

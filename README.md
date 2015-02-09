@@ -22,7 +22,7 @@ pip install Django==1.7.4
 django-admin.py startproject --template=https://github.com/pinax/pinax-project-account/zipball/master mysite
 cd mysite
 pip install -r requirements.txt
-./manage.py migrate
-./manage.py loaddata sites
-./manage.py runserver
+python manage.py migrate
+python manage.py loaddata sites
+python manage.py runserver
 ```

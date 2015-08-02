@@ -64,7 +64,7 @@ STATIC_URL = "/site_media/static/"
 
 # Additional locations of static files
 STATICFILES_DIRS = [
-    os.path.join(PACKAGE_ROOT, "static"),
+    os.path.join(PROJECT_ROOT, "static", "dist"),
 ]
 
 # List of finder classes that know how to find static files in

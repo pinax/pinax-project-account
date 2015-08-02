@@ -1,0 +1,17 @@
+// ~ uses paths in node_modules based on default webpack configuration
+@import "~bootstrap/less/bootstrap.less";
+@import "~font-awesome/less/font-awesome.less";
+
+// Override some of the variables in bootstrap and font-awesome, @@@ put in own file
+@fa-font-path: "~font-awesome/fonts/";
+@icon-font-path: "~bootstrap/fonts/";
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// Account
+@import "account.less";
+
+// Site overrides
+@import "custom.less";

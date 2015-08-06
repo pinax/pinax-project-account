@@ -36,6 +36,14 @@ We rely on the Node Package Manager (`npm`), which comes with `node`. If on the
 Mac, you can just `brew install node`. Otherwise, you can find [documentation](https://docs.npmjs.com/getting-started/installing-node)
 on how to install it for your operating system or desired setup.
 
+If you don't already have `webpack` setup globally on your system run:
+
+```
+npm install webpack -g`
+```
+
+Now run:
+
 ```
 npm install  # this will install all the dependencies in package.json
 webpack      # this will build everything according to the configuration we've provided in webpack.config.js

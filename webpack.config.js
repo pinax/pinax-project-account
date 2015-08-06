@@ -16,7 +16,7 @@ module.exports = {
         loaders: [
             { test: /\.less$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader") },
             { test: /\.(woff|woff2|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?name=/fonts/[name].[ext]?[hash]" },
-            { test: /\.jsx?$/, loader: "babel-loader" },
+            { test: /\.jsx?$/, loader: "babel-loader", query: {compact: false} },
         ]
     },
     resolve: {

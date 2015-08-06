@@ -39,7 +39,7 @@ on how to install it for your operating system or desired setup.
 If you don't already have `webpack` setup globally on your system run:
 
 ```
-npm install webpack -g`
+npm install webpack -g
 ```
 
 Now run:

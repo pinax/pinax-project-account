@@ -1,6 +1,6 @@
 # pinax-project-account
 
-[![Join the chat at https://gitter.im/pinax/pinax-project-account](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pinax/pinax-project-account?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join us on Slack](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
 In addition to what is provided by the "zero" project, this project provides
 thorough integration with django-user-accounts, adding comprehensive account

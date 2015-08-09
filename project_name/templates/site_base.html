@@ -6,7 +6,7 @@
 
 
 {% block styles %}
-    <link href="{% static "css/site.css" %}" rel="stylesheet">
+    {% include "_styles.html" %}
 {% endblock %}
 
 
@@ -21,7 +21,7 @@
 
 
 {% block scripts %}
-    <script type="text/javascript" src="{% static "js/site.js" %}"></script>
+    {% include "_scripts.html" %}
 {% endblock %}
 
 

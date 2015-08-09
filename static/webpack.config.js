@@ -1,6 +1,8 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 var path = require("path");
 var webpack = require("webpack");
+var projectTemplatesRoot = "../../{{ project_name }}/templates/";
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
@@ -9,7 +11,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "/js/site.js",
+        filename: "js/site.js?[hash]",
         publicPath: "/site_media/static"
     },
     module: {
@@ -46,6 +48,26 @@ module.exports = {
                 except: ['$super', '$', 'exports', 'require']
             }
         }),
-        new ExtractTextPlugin("/css/site.css")
+        new ExtractTextPlugin("css/site.css?[hash]"),
+        new HtmlWebpackPlugin({
+            filename: projectTemplatesRoot + "_styles.html",
+            templateContent: function(templateParams, compilation) {
+                var link = "";
+                for (var css in templateParams.htmlWebpackPlugin.files.css) {
+                    link += "<link href='" + templateParams.htmlWebpackPlugin.files.css[css]  + "' rel='stylesheet' />\n"
+                }
+                return link;
+            }
+        }),
+        new HtmlWebpackPlugin({
+            filename: projectTemplatesRoot + "_scripts.html",
+            templateContent: function(templateParams, compilation) {
+                var script = "";
+                for (var js in templateParams.htmlWebpackPlugin.files.js) {
+                    script += "<script src='" + templateParams.htmlWebpackPlugin.files.js[js]  + "'></script>\n"
+                }
+                return script;
+            }
+        })
     ]
 };

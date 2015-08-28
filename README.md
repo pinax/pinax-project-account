@@ -1,27 +1,33 @@
-# Pinax Project Account
+Pinax Project Account
+======================
 
 [![Join us on Slack](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
-In addition to what is provided by the [zero project](https://github.com/pinax/pinax-projects/blob/master/README.md#pinax-project-zero), pinax-project-account provides thorough integration with [django-user-accounts](https://github.com/pinax/django-user-accounts), adding comprehensive account management functionality. It is a foundation suitable for most sites that have user accounts.
+
+Pinax
+------
 
 Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates. 
 This collection can be found at http://pinaxproject.com.
 
-In order to foster a kind, inclusive, and harassment-free community, the Pinax Project has a code of conduct, which can be found here  http://pinaxproject.com/pinax/code_of_conduct/.
 
-The Pinax documentation is available at http://pinaxproject.com/pinax/.
+django-user-account
+--------------------
 
-For updates and news regarding the Pinax Project, please follow us on Twitter at [@pinaxproject](https://twitter.com/pinaxproject) and check out our blog http://blog.pinaxproject.com.
+In addition to what is provided by the [zero project](https://github.com/pinax/pinax-projects/blob/master/README.md#pinax-project-zero), `pinax-project-account` provides thorough integration with [django-user-accounts](https://github.com/pinax/django-user-accounts), adding comprehensive account management functionality. It is a foundation suitable for most sites that have user accounts.
 
 The source code for this project template has moved to the [account branch](https://github.com/pinax/pinax-projects/tree/account) of [pinax-projects](https://github.com/pinax/pinax-projects/).
 
-##### Prerequisites
+
+Prerequisites
+--------------
 
 * pip
 * npm
 
 
-##### Getting Started
+Getting Started
+-----------------
 
 You can get started with this project by doing the following:
 
@@ -40,7 +46,8 @@ npm install
 ./manage.py runserver
 ```
 
-##### Static Media
+Static Media
+-------------
 
 Static media is managed by `webpack`, and is configured out of the box to watch
 and rebuild on change by running:
@@ -51,3 +58,25 @@ npm run watch
 
 We recommend running that in a separate terminal window than `manage.py runserver`
 if and when you are editing `js` or `less` files.
+
+
+Documentation
+--------------
+
+The Pinax documentation is available at http://pinaxproject.com/pinax/.
+
+
+Code of Conduct
+----------------
+
+In order to foster a kind, inclusive, and harassment-free community, the Pinax Project has a code of conduct, which can be found here  http://pinaxproject.com/pinax/code_of_conduct/.
+
+
+Pinax Project Blog and Twitter
+-------------------------------
+
+For updates and news regarding the Pinax Project, please follow us on Twitter at [@pinaxproject](https://twitter.com/pinaxproject) and check out our blog http://blog.pinaxproject.com.
+
+
+
+

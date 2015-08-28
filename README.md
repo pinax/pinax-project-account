@@ -11,7 +11,7 @@ Pinax is an open-source platform built on the Django Web Framework. It is an eco
 This collection can be found at http://pinaxproject.com.
 
 
-django-user-account
+pinax-project-account
 --------------------
 
 In addition to what is provided by the [zero project](https://github.com/pinax/pinax-projects/blob/master/README.md#pinax-project-zero), `pinax-project-account` provides thorough integration with [django-user-accounts](https://github.com/pinax/django-user-accounts), adding comprehensive account management functionality. It is a foundation suitable for most sites that have user accounts.
